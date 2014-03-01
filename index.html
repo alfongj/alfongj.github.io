@@ -1,130 +1,667 @@
-<!DOCTYPE HTML>
-<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-<html>
+<!DOCTYPE html>
 <head>
-	<link rel="stylesheet" type="text/css" media="screen" href="style/reset.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+<!-- Meta Tag for responsive -->
+<meta name=”viewport” content=”width=1024, minimal-ui”>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
-	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<title>Alfonso Gómez-Jordana's personal website</title>
 
-	<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
-	
-<!---
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script> -->
+<!-- Loading of stylesheet for the design -->
+<link href="css/main_pastels.css" rel="stylesheet" type="text/css" />
 
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-29507621-1']);
-		_gaq.push(['_setDomainName', 'alfongj.es']);
-		_gaq.push(['_trackPageview']);
+<!-- This tells the page to watch for special styling for IE9 -->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
 
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+<!-- Important external stylesheets -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery.fs.wallpaper.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/animate.css">
 
-	</script>
+<!-- Finally we will load the font from Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-41792703-1', {
-			'storage': 'none',
-			'clientId': 'pepillo'
-		});
-		ga('send', 'pageview');
-
-	</script>
-	
-	<title>Alfonso Gómez-Jordana</title>
 </head>
-<body>
-	<div class="wrapper">
-		<div id="header-wrapper">
-			<header id="header">
-				<div id="prof-image-container">
-					<!--<a href="bio/index.html">-->
-						<img src="img/profile.png" alt="Profile photo" class="prof-image" />
-					<!--</a>-->
-				</div>
-				<div id="title-container">
-					<h1 id="title-name">Alfonso Gómez-Jordana</h1>
-					<hr>
-					<h2 id="title-quote" class="quotation">Day dreamer</h2>
-				</div>
-				<div class="clear"></div>
-			</header>
-		</div>
-		
-		<div id="wrapper-body">
-			<div id="button-bar" class="center-in-wrapper-body">
-				<div id="twitter" class="button-bar-button">
-					<a target="_blank" href="https://twitter.com/#!/alfongj" >
-						<img src="img/twitter_icon.png" alt="Twitter Icon" />
-					</a>
-				</div>
-				<div id="resume" class="button-bar-button">
-					<a href="cv/index.html" >
-						<img src="img/resume_icon.png" alt="Resume Icon" />
-					</a>
-				</div>
-				<div id="gplus" class="button-bar-button">
-					<a target="_blank" href="https://plus.google.com/106617917535401926434">
-						<img src="img/gplus_icon.png" alt="Google+ Icon" />
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<script type="text/javascript">
-		$('#button-bar').hide();
-		$('#button-bar').fadeIn(800);
+<body id="top">
 
-		/* Uncomment this and comment the rest for enabling rumble on the profile image
-		// Preload profile hover
-		$('<img src="img/profile_hover.png"/>');
+<!-- Start of Social Section at bottom of page -->
+<div id="socialsection">
 
-		$('.button-bar-button, #prof-image-container').jrumble({
-			opacity: true,
-			opacityMin: .4,
-			speed: 100
-		});
+    <!-- You MUST add the URL's for your account at each social network in the code below to swap out the hash # tag -->
+    <div id="social-left">
+        <a href="https://plus.google.com/+AlfonsoG%C3%B3mezJordana/posts"><i class="icon-gplus"></i></a>
+        <!--<a href="#"><i class="icon-pinterest"></i></a>-->
+        <a href="https://www.facebook.com/alfongj"><i class="icon-facebook"></i></a>
+        <a href="https://twitter.com/alfongj"><i class="icon-twitter"></i></a>
+    </div>
 
-		$('.button-bar-button, #prof-image-container').hover(function(){
-			$(this).trigger('startRumble');
-		}, function(){
-			$(this).trigger('stopRumble');
-		}); 
+    <div id="social-button"></div>
 
-		$('.prof-image').hover(function(){
-			$(this).attr('src', 'img/profile_hover.png');
-		}, function(){
-			$(this).attr('src', 'img/profile.png');
-		}); */
+    <!-- You MUST change the URL definition in these links to share YOUR page - simply change the URL -->
+    <div id="social-right">
+        <a href="https://plus.google.com/share?url=http://alfongj.es" target="_blank"><i class="icon-gplus"></i></a>
+        <!--<a href="http://pinterest.com/pin/create/button/?url=http://alfongj.es" target="_blank"><i class="icon-pinterest"></i></a>-->
+        <a href="http://www.facebook.com/share.php?u=http://alfongj.es"  target="_blank"><i class="icon-facebook"></i></a>
+        <a href="http://twitter.com/home?status=http://alfongj.es"  target="_blank"><i class="icon-twitter"></i></a>
+    </div>
 
-		$('.button-bar-button').jrumble({
-			opacity: true,
-			opacityMin: .4,
-			speed: 100
-		});
-
-		$('.button-bar-button').hover(function(){
-			$(this).trigger('startRumble');
-		}, function(){
-			$(this).trigger('stopRumble');
-		}); 
+</div><!-- End of Social Section at bottom of page -->
 
 
-		//TODO: Auto position buttons in ideal place depending on resolution
-	</script>
 
+<!-- HEADER SECTION -->
+<header>
+
+    <!-- Start of Header Container - the content div that is a set width and centralized -->
+    <div class="header-container">
+
+        <div id="menu" class="menu">
+            <div id="nav" class="nav">
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#CV">CV / Resume</a></li>
+                    <!--<li><a href="#Testimonials">Testimonials</a></li>-->
+                    <!--<li><a href="#Clients">Clients</a></li>-->
+                    <!--<li><a href="#Portfolio">Portfolio</a></li>-->
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div id="menu-button"></div>
+        </div>
+
+    </div><!-- End of Header Container -->
+
+</div><!-- End of Header -->
+
+</header>
+
+
+<!-- TOP SECTION -->
+
+<!-- Start of Video Element -->
+<div id="video_element">
+
+    <!-- Start of Main Title + Intro -->
+    <div class="huge-title">
+
+        <img src="img/headshot.jpg" alt="Alfonso Gomez-Jordana" class="headshot wow tada" data-wow-delay="3s" data-wow-offset="80" data-wow-duration="1s">
+        <h1 class="wow bounceInDown" data-wow-offset="80" data-wow-duration="3s">Alfonso Gómez-Jordana</h1>
+
+        <!-- Start of Owl Testimonial Carousel -->
+        <div class="testimonials owl-carousel">
+
+            <div><!-- Start of Slide 1 -->
+                <div class="button-box"><h4>Problem Solver</h4></div>
+            </div>
+
+            <div><!-- Start of Slide 2 -->
+                <div class="button-box"><h4>Software Developer</h4></div>
+            </div>
+
+            <div><!-- Start of Slide 3 -->
+                <div class="button-box"><h4>Inventor Wannabe</h4></div>
+            </div>
+
+        </div><!-- End of Owl Testimonial Carousel -->
+
+    </div><!-- End of Main Title + Intro -->
+
+    <!-- Start of Scroll Down Message and animation -->
+    <div id="godown" class="floating">
+
+        <p><a href="#About">Learn more about me</a></p>
+        <img src="img/godown.png" alt="down"/>
+
+    </div><!-- End of Scroll Down Message and animation -->
+
+    <!-- Start of Shade - this is the css based gradient over the image for that cool effect -->
+    <div class="shade"></div><!-- End of Shade -->
+
+    <!-- Start of Background - displays a static image in replacement of video when on tablets and mobile devices -->
+    <div id="background"></div><!-- End of Background -->
+
+</div><!-- End of Video Element -->
+
+
+
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+
+    <!-- Start of Container -->
+    <div class="container">
+
+
+
+        <!-- AT A GLANCE SECTION -->
+
+        <!-- Start of Content - where the content be -->
+        <div class="content2">
+
+            <!-- Start of Hero - The main top image like a phone etc -->
+            <div class="hero">
+
+                <h3>At a glance</h3>
+
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
+                        <h4>A.K.A.</h4>
+                            <h5>alfongj</h5>
+                </div>
+
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4>FROM</h4>
+                            <h5>Madrid, Spain</h5>
+                </div>
+
+                <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h4>BORN</h4>
+                            <h5>1992</h5>
+                </div>
+
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
+                        <h4>RESIDENCE</h4>
+                            <h5>Berkeley, CA</h5>
+                </div>
+
+                <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h4>EDUCATION</h4>
+                            <h5>Double Degree in Computer Science and Business Admin. (pursuing) </h5>
+                </div>
+
+                <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h4>HOBBIES</h4>
+                            <h5>Filmmaking, Tinkering, Gaming</h5>
+                </div>
+
+            </div><!-- End of Hero -->
+
+        </div><!-- End of Content -->
+
+
+
+        <!-- ABOUT SECTION -->
+
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+
+            <!-- Start of Content -->
+            <div class="content" id="About">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">About me</h2>
+                <p>Born and raised in the lovely town of <a href="https://www.google.com/maps/place/Majadahonda/@40.4644052,-3.8664316,5788m/data=!3m1!1e3!4m2!3m1!1s0xd4184ecb204803f:0xcafdc908f78db4ef">Majadahonda</a> (in Madrid, Spain), I've dreamt since childhood of becoming an inventor. It wasn't until university when I realized they now call it <em>entrepreneur</em>. </p>
+                <p>I am currently studying Computer Science and Business Administration in <a href="http://www.berkeley.edu/">UC Berkeley</a> (for an exchange year) and plan to graduate next year from my Alma Mater, <a href="http://www.uc3m.es">Carlos III</a>.</p>
+                <p>But my life belongs here, in The Valley, to where I plan to return to create things that matter.
+                </p>
+
+                <blockquote class="wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="3s"><p>It always seems impossible until it's done. - N.M.</p></blockquote>
+
+                <!--<img src="img/signature.png" width="250" alt="John Hancock">-->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of White Container -->
+
+
+
+        <!-- SKILLS SECTION -->
+
+        <!-- Start of Parallax 1 Container -->
+        <div class="parallax1">
+
+            <!-- Start of Content -->
+            <div class="content" id="Skills">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">My Skills</h2>
+
+                <!-- Start of One Third Column Container -->
+                <div class="one_third wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <p>I am curious by nature. I have knowledge and experience on many diverse tools and disciplines. I am no expert in any, but I am <strong>expert in learning</strong>.</p>
+                    <div class="button-box"><a href="#Contact" class="button">Contact Me</a></div>
+
+                </div><!-- End of One Third Column Container -->
+
+                <!-- Start of Two Thirds Column Last Container -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <!-- Start of 3 rows -->
+                    <div class="half_column1">
+                        <h3 class="centered">Web Frontend</h3>
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#9BD87F" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true" >
+                            <h3>HTML / CSS</h3>
+                        </div>
+
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#9BD87F" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true">
+                            <h3>JS</h3>
+                        </div>
+
+                        <div class="one_third_last centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#5A9AD1" data-skin="cr3ativ" data-thickness=".2" value="60" data-readOnly="true">
+                            <h3>JS LIBS</h3>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <h3 class="centered">Web Backend</h3>
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#5A9AD1" data-skin="cr3ativ" data-thickness=".2" value="60" data-readOnly="true">
+                            <h3>RAILS</h3>
+                        </div>
+
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#FFA747" data-skin="cr3ativ" data-thickness=".2" value="40" data-readOnly="true">
+                            <h3>PLAY!</h3>
+                        </div>
+
+                        <div class="one_third_last centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#FFA747" data-skin="cr3ativ" data-thickness=".2" value="40" data-readOnly="true">
+                            <h3>NODEJS</h3>
+                        </div>
+                    </div>
+                    <!-- End of 3 rows -->
+
+
+                    <!-- Start of 2nd 3 rows -->
+                    <div class="half_column2">
+                        <h3 class="centered">Other platforms</h3>
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#9BD87F" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true">
+                            <h3>ANDROID</h3>
+                        </div>
+
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#9BD87F" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true">
+                            <h3>GIT</h3>
+                        </div>
+
+                        <div class="one_third_last centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#FFA747" data-skin="cr3ativ" data-thickness=".2" value="40" data-readOnly="true">
+                            <h3>R</h3>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <h3 class="centered">Other Skills</h3>
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#9BD87F" data-skin="cr3ativ" data-thickness=".2" value="80" data-readOnly="true">
+                            <h3>PHOTOSHOP</h3>
+                        </div>
+
+                        <div class="one_third centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#5A9AD1" data-skin="cr3ativ" data-thickness=".2" value="60" data-readOnly="true">
+                            <h3>MARKETING</h3>
+                        </div>
+
+                        <div class="one_third_last centered skill">
+                            <input class="knob" data-width="100%" data-fgColor="#5A9AD1" data-skin="cr3ativ" data-thickness=".2" value="60" data-readOnly="true">
+                            <h3>FINANCE</h3>
+                        </div>
+                    </div>
+                    <!-- End of 2nd 3 rows -->
+
+                </div><!-- End of Two Thirds Column Last Container -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Parallax 1 Container -->
+
+
+
+        <!-- CV / RESUME SECTION -->
+
+        <!-- Start of White Container -->
+        <div class="whitecontainer">
+
+            <!-- Start of Content -->
+            <div class="content" id="CV">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">curriculum vitae</h2>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Work Experience</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Search Quality Intern</h3>
+                    <h5>Google, Dublin</h5>
+                    <p class="small">3 Months</p>
+                    <div class="date">June 2013 - Aug 2013</div>
+                    <p>At Google I was in charge of developing almost from scratch an usage tracking system for internal tools,  mostly in JS. Also, I used R and other tools to develop several data analysis reports for the Business Intelligence team.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Web and Android developer</h3>
+                    <h5>Freelance</h5>
+                    <p class="small">2 Years</p>
+                    <div class="date">Feb 2012 - Present</div>
+                    <p>I have developed several web and Android apps for different clients. These include 8 <a href="http://www.cloudspokes.com/members/alfongj">CloudSpokes contests</a>, an <a href="https://play.google.com/store/apps/details?id=com.ityis.mobile.recetas">Android app</a> with more than 500,000 downloads and 4.2 rating, and smaller projects.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Student & Mentor</h3>
+                    <h5>Google Summer of Code</h5>
+                    <p class="small">2x3 Months</p>
+                    <div class="date">May 2011 - Aug 2011, May 2012 - Aug 2012</div>
+                    <p>I participated, first as student and then as mentor of another student, in <a href="code.google.com/soc/">Google's Summer of Code</a>. In both years I worked for the <a href="http://www.gambit-project.org/">Gambit</a> Open Source organization, helping improve a tool called <a href="https://github.com/gambitproject/gte">Game Theory Explorer</a>, for visualizing and creating Game Theory games.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>CTO and sole developer</h3>
+                    <h5>Groupject.com</h5>
+                    <p class="small">4 Months</p>
+                    <div class="date">Oct 2011 - Jan 2012</div>
+                    <p>I co-founded and developed an incomplete alpha version of Groupject, a social platform for showcasing and collaborating in gobby projects. Groupject participated in the startup <em>preaccelerator</em> of <a href="http://tetuanvalley.com/">Tetuan Valley</a>.</p>
+                    <a href="/cv/CV.pdf" class="button-reverse">Download My CV</a><a href="http://www.linkedin.com/in/alfongj" class="button">LinkedIn Profile</a>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="bigspace"></div>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third clearfix wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Education</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>B.A. in Computer Science, B.S. in Business Administration</h3>
+                    <h4>G.P.A. (current): 4.0, A+ in all C.S. courses</h4>
+                    <h5>University of California, Berkeley</h5>
+                    <p class="small">1 Year</p>
+                    <div class="date">Aug 2013 - May 2014</div>
+                    <p>
+                        I am staying in UC Berkeley for a year during an exchange program.
+                    </p>
+                    <p>
+                        I have obtained so far special distinction (A+) in all Computer Science courses taken.
+                    </p>
+                    <p>
+                        I took part in the executive team of the Startup @ Berkeley student organization, helping organize Berkeley's biggest entrepreneurship event of the year.
+                    </p>
+                    <p>
+                        I am collaborating as a Student Researcher in the development of <a href="http://akaros.cs.berkeley.edu/">AKAROS</a>, a new, open source, operating system for manycore architectures.
+                    </p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Simultaneous Degrees in Computer Engineering and Business Administration.</h3>
+                    <h4>G.P.A. (current): 9.5/10, A+ in 35 courses</h4>
+                    <h5>Carlos III University, Madrid.</h5>
+                    <p class="small">6 Years</p>
+                    <div class="date">Sep 2009 - June 2015 (exp.)</div>
+                    <p>
+                        I am pursuing two complete European degrees (240 ECTS each) as part of a special, high demanding, program in Carlos III university, Madrid.
+                    </p>
+                    <p>
+                        I am top of the class, and have received so far 35 special distinctions (A+) among the courses taken. Such amount has rarely been seen in the university, especially in the last decade.
+                    </p>
+                    <p>
+                        I have obtained several academic excellence awards, both from the University (Premio de Excelencia, given to the best 8 students in any Engineering field) but also from the Madrid region itself (Beca de Excelencia, given to the top 700 university students in Madrid).
+                    </p>
+                    <p>
+                        I have been research assistant, in the topic of Evolutionary Algorithms, and collaborating in the authoring of a paper in the field.
+                    </p>
+                     <a href="/cv/CV.pdf" class="button-reverse">Download My CV</a><a href="http://www.linkedin.com/in/alfongj" class="button">LinkedIn Profile</a>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="bigspace"></div>
+
+                <!-- Start of 1/3 Column -->
+                <div class="one_third clearfix wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+                    <h2>Other projects</h2>
+                </div><!-- End of 1/3 Column -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>President</h3>
+                    <h5>Imagineware</h5>
+                    <p class="small">2 Years</p>
+                    <div class="date">March 2012 - Present</div>
+                    <p><a href="http://www.imagineware.org">Imagineware</a> is a student association born with the objective of making the latest programming tools, languages and platforms easy to learn and accessible for busy university students. As part of Imagineware, I have helped to organize several tech events on campus (with a total of almost 1000 attendees), I have developed marketing campaigns, looked for funding and sponsorship, developed its website...</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Winner</h3>
+                    <h5>Mathematics competitions</h5>
+                    <div class="date">2003-2009</div>
+                    <p>During my High School period I obtained high recognition among local and national mathematics contests. I was the only <strong>double Gold medalist at the Spanish National Mathematics Olympiad (OMN)</strong> in 2005. I was the Gold medalist with highest score at the Spanish Mathematics Olympiad (OME) in its local phases in Madrid (2009), and Alicante (2008). I was also Gold medalist at Concurso de Primavera de Matemáticas, Madrid (2004). I also obtained several other minor awards along the years.</p>
+                </div><!-- End of 2/3 Column Last -->
+
+                <!-- Start of 2/3 Column Last -->
+                <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                    <h3>Collaborator</h3>
+                    <h5>Several non for profit organizations / projects</h5>
+                    <div class="date">2000 - Present</div>
+                    <p>I have always been a very busy person. However, I always try to find time to help atruistically on very diverse social projects. For instance, I have physically collaborated in seldom occasions in centers for the elderly, or for mentally handicapped; I have taught altruistically in University, as well as in a centre for minorities. I have translated a mathematics textbook for North African children, and I collaborate in Open Source projects.
+                    </p>
+                    <p>
+                        I am very open to new opportunities of social collaboration, especially if they are related to my knowledge and experience profiles.
+                    </p>
+                    <a href="/cv/CV.pdf" class="button-reverse">Download My CV</a><a href="http://www.linkedin.com/in/alfongj" class="button">LinkedIn Profile</a>
+                </div><!-- End of 2/3 Column Last -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of White Container -->
+
+
+
+        <!-- TESTIMONIALS SECTION -->
+
+        <!-- Start of Parallax 2 Container
+        <div class="parallax2">
+
+                <!-- Start of Content
+                <div class="content shadow" id="Testimonials">
+
+                	<h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Client Testimonials</h2>
+
+                    <!-- Start of Owl Carousel
+                    <div class="testimonials owl-carousel">
+                          <div><blockquote><p>TBD.</p><cite>Jonathan Atkinson</cite></blockquote></div>
+                          <div><blockquote><p>TBD.</p><cite>Jonathan Atkinson</cite></blockquote></div>
+                          <div><blockquote><p>TBD.</p><cite>Jonathan Atkinson</cite></blockquote></div>
+                          <div><blockquote><p>TBD.</p><cite>Jonathan Atkinson</cite></blockquote></div>
+                    </div><!-- End of Carousel
+
+				</div><!-- End of Content
+
+        </div><!-- End of Parallax 2 Container -->
+
+
+
+        <!-- CLIENTS SECTION
+
+        <!-- Start of Grey Container
+        <div class="greycontainer">
+
+                <!-- Start of Content
+                <div class="content" id="Clients">
+
+                    <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Clients</h2>
+                    <p>The fully responsive <a href="https://github.com/OwlFonk/OwlCarousel">Owl Carousel</a> is also touch enabled for devices such as smart phones and tablets. The carousel will accept any content such as images, styled divs, text blocks or anything else you can create.</p>
+
+                    <!-- Start of Owl Carousel
+                    <div class="owl-example owl-carousel">
+
+                        <div><a href="img/client1.png" class="fancybox" rel="group"><img src="img/client1.png" alt="client 1" width="80%"/></a></div>
+                        <div><a href="img/client2.png" class="fancybox" rel="group"><img src="img/client2.png" alt="client 2" width="80%"/></a></div>
+                        <div><a href="img/client3.png" class="fancybox" rel="group"><img src="img/client3.png" alt="client 3" width="80%"/></a></div>
+                        <div><a href="img/client4.png" class="fancybox" rel="group"><img src="img/client4.png" alt="client 4" width="80%"/></a></div>
+                        <div><a href="img/client5.png" class="fancybox" rel="group"><img src="img/client5.png" alt="client 5" width="80%"/></a></div>
+                        <div><a href="img/client6.png" class="fancybox" rel="group"><img src="img/client6.png" alt="client 6" width="80%"/></a></div>
+
+                    </div><!-- End of Carousel
+
+                </div><!-- End of Content
+
+        </div><!-- End of Grey Container
+
+
+
+        <!-- PORTFOLIO SECTION
+        <!-- Start of White Container
+        <div class="whitecontainer">
+
+            <!-- Start of Content - where the content be
+            <div class="content" id="Portfolio">
+
+                <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Portfolio</h2>
+                <p>Display as many or as little images as you wish using the gallery module. This 3 column section can be stacked multiple times to provide a huge amount of images if required.</p>
+                <p>Lightbox powered means larger images are just a click away.</p>
+                <p>These images are contained in a group meaning that your user can click any image and then go back and forwards through each one in the lightbox.</p>
+
+                <div class="center-align">
+
+                    <!-- Start of 3 rows
+                    <div class="one_third wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port1.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port1.jpg" alt="Portfolio 1" /></div></a>
+                            <h5>Fashion Watch</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
+
+                    <div class="one_third wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port2.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port2.jpg" alt="Portfolio 2" /></div></a>
+                            <h5>TV Chair</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
+
+                    <div class="one_third_last wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port3.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port3.jpg" alt="Portfolio 3" /></div></a>
+                            <h5>Sun Leak</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div><!-- End of 3 rows
+
+                    <!-- Start of 3 rows
+                    <div class="one_third wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port4.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port4.jpg" alt="Portfolio 4" /></div></a>
+                            <h5>Water Balls</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
+
+                    <div class="one_third wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port5.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port5.jpg" alt="Portfolio 5" /></div></a>
+                            <h5>Wedding Rings</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div>
+
+                    <div class="one_third_last wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">
+                        <div class="infopanel">
+                            <a href="img/port6.jpg" class="fancybox" rel="group2" ><div class="eye"><img src="img/port6.jpg" alt="Portfolio 6" /></div></a>
+                            <h5>Time to Drive</h5>
+                            <p>Caption styling is also included and styled for <a href="#">links also</a></p>
+                        </div>
+                    </div><!-- End of 3 rows
+
+                </div>
+
+            </div><!-- End of Content
+
+        </div><!-- End of White Container -->
+
+
+
+        <!-- CONTACT FORM SECTION -->
+
+        <!-- Start of Grey Container -->
+        <div class="greycontainer" id="Contact">
+
+            <!-- Start of Content -->
+            <div class="content centered" id="Contact">
+
+                <h2>Contact</h2>
+                <p>While I set up a proper contact form, please send any inquiries to <em>alfongj at gmail</em>.</p>
+
+                <!-- Begin Contact Form
+                <form action="mailer.php" id="contact_form" method="post" class="wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+
+                    <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" value="" class="requiredField name" />
+                    </p>
+
+                    <p>
+                    <label>Email Address</label>
+                    <input type="text" name="email" id="email" value=""  class="requiredField email" />
+                    </p>
+
+                    <p>
+                    <label>Your Message</label>
+                    <textarea name="message" id="message" rows="8" cols="30" class="requiredField message"></textarea>
+                    </p>
+
+                    <p><input name="submitted" id="submitted" value="Submit" class="submit" type="submit" /></p>
+
+                </form>  <!--End Contact Form -->
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of Grey Container -->
+
+
+
+        <!-- FOOTER SECTION -->
+
+        <!-- Start Of Footer -->
+         <footer>
+
+            <!-- Start of Content -->
+            <div class="content">
+
+                <p>Addr: Berkeley, CA<br>
+                Phone: +1 510-565-6094<br>
+                <a href="">alfongj AT gmail</a></p>
+
+                <p class="copyright">Copyright 2014 - Alfonso Gómez-Jordana</p>
+
+            </div><!-- End of Content -->
+
+        </footer><!-- End Of Footer -->
+
+	</div><!-- End of Container -->
+
+</div><!-- End of Wrapper -->
+
+<!--Loading Scripts -->
+<!-- First we will load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<!--Load Fallback if google not available-->
+<script>
+if (!window.jQuery) {
+    document.write('<script src="js/jquery-1.11.0.min.js"><\/script>');
+}
+</script>
+<!-- Now we load the JS files for the fancy things on the page -->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/retina.js"></script>
+<script type="text/javascript" src="js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="js/jquery.fs.wallpaper.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.plusanchor.js"></script>
+<script type="text/javascript" src="js/jquery.knob.js"></script>
+<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 </body>
 </html>
