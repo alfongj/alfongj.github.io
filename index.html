@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" media="screen" href="style/reset.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
+	
+<!---
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script> -->
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29507621-1']);
+		_gaq.push(['_setDomainName', 'alfongj.es']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-41792703-1', {
+			'storage': 'none',
+			'clientId': 'pepillo'
+		});
+		ga('send', 'pageview');
+
+	</script>
+	
+	<title>Alfonso Gómez-Jordana</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="header-wrapper">
+			<header id="header">
+				<div id="prof-image-container">
+					<!--<a href="bio/index.html">-->
+						<img src="img/profile.png" alt="Profile photo" class="prof-image" />
+					<!--</a>-->
+				</div>
+				<div id="title-container">
+					<h1 id="title-name">Alfonso Gómez-Jordana</h1>
+					<hr>
+					<h2 id="title-quote" class="quotation">Day dreamer</h2>
+				</div>
+				<div class="clear"></div>
+			</header>
+		</div>
+		
+		<div id="wrapper-body">
+			<div id="button-bar" class="center-in-wrapper-body">
+				<div id="twitter" class="button-bar-button">
+					<a target="_blank" href="https://twitter.com/#!/alfongj" >
+						<img src="img/twitter_icon.png" alt="Twitter Icon" />
+					</a>
+				</div>
+				<div id="resume" class="button-bar-button">
+					<a href="cv/index.html" >
+						<img src="img/resume_icon.png" alt="Resume Icon" />
+					</a>
+				</div>
+				<div id="gplus" class="button-bar-button">
+					<a target="_blank" href="https://plus.google.com/106617917535401926434">
+						<img src="img/gplus_icon.png" alt="Google+ Icon" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$('#button-bar').hide();
+		$('#button-bar').fadeIn(800);
+
+		/* Uncomment this and comment the rest for enabling rumble on the profile image
+		// Preload profile hover
+		$('<img src="img/profile_hover.png"/>');
+
+		$('.button-bar-button, #prof-image-container').jrumble({
+			opacity: true,
+			opacityMin: .4,
+			speed: 100
+		});
+
+		$('.button-bar-button, #prof-image-container').hover(function(){
+			$(this).trigger('startRumble');
+		}, function(){
+			$(this).trigger('stopRumble');
+		}); 
+
+		$('.prof-image').hover(function(){
+			$(this).attr('src', 'img/profile_hover.png');
+		}, function(){
+			$(this).attr('src', 'img/profile.png');
+		}); */
+
+		$('.button-bar-button').jrumble({
+			opacity: true,
+			opacityMin: .4,
+			speed: 100
+		});
+
+		$('.button-bar-button').hover(function(){
+			$(this).trigger('startRumble');
+		}, function(){
+			$(this).trigger('stopRumble');
+		}); 
+
+
+		//TODO: Auto position buttons in ideal place depending on resolution
+	</script>
+
+</body>
+</html>
