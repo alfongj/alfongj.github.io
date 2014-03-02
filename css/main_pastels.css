@@ -73,15 +73,14 @@ strong {font-weight: 600; }
 
 /* Easily swap out gradient by visiting http://www.colorzilla.com/gradient-editor/ and replace the code below! DO NOT REMOVE the width, height, z-index and position in the code below */
 .shade {
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmIwN2YiIHN0b3Atb3BhY2l0eT0iMC4xNCIvPgogICAgPHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiNhNzg3ODEiIHN0b3Atb3BhY2l0eT0iMC4zNyIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDg1Yjg0IiBzdG9wLW9wYWNpdHk9IjAuODUiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(255,176,127,0.14) 0%, rgba(167,135,129,0.37) 48%, rgba(72,91,132,0.85) 100%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,176,127,0.14)), color-stop(48%,rgba(167,135,129,0.37)), color-stop(100%,rgba(72,91,132,0.85))); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,176,127,0.14) 0%,rgba(167,135,129,0.37) 48%,rgba(72,91,132,0.85) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  rgba(255,176,127,0.14) 0%,rgba(167,135,129,0.37) 48%,rgba(72,91,132,0.85) 100%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  rgba(255,176,127,0.14) 0%,rgba(167,135,129,0.37) 48%,rgba(72,91,132,0.85) 100%); /* IE10+ */
-background: radial-gradient(ellipse at center,  rgba(255,176,127,0.14) 0%,rgba(167,135,129,0.37) 48%,rgba(72,91,132,0.85) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ffb07f', endColorstr='#d9485b84',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNCIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiNkNjZmZmIiIHN0b3Atb3BhY2l0eT0iMC4xNCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYzAyMmY5IiBzdG9wLW9wYWNpdHk9IjAuNDgiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.14) 0%, rgba(214,111,251,0.14) 65%, rgba(192,34,249,0.48) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.14)), color-stop(65%,rgba(214,111,251,0.14)), color-stop(100%,rgba(192,34,249,0.48))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.14) 0%,rgba(214,111,251,0.14) 65%,rgba(192,34,249,0.48) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.14) 0%,rgba(214,111,251,0.14) 65%,rgba(192,34,249,0.48) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.14) 0%,rgba(214,111,251,0.14) 65%,rgba(192,34,249,0.48) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,0.14) 0%,rgba(214,111,251,0.14) 65%,rgba(192,34,249,0.48) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ffffff', endColorstr='#7ac022f9',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
 
 	width: 100%;
@@ -92,7 +91,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ffb07f', e
 /* End of the gradient - keep the width, height, z-index and position in the code above!! */
 
 #video_element { width: 100%; height: 100%; background-size: cover; background-position: center center; z-index:1; }
-/* Un-comment this to apply a tiny dotted filter above the video for that 'transmission' look and feel
+/* Un-comment this to apply a tiny dotted filter above the video for that 'transmission' look and feel*/
 #video_element:after {
     background: url("../img/bg-pixel-20.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     bottom: 0;
@@ -102,7 +101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ffb07f', e
     right: 0;
     top: 0;
 }
-*/
+
 .shade2 {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
