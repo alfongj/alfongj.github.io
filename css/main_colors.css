@@ -361,26 +361,21 @@ h5 {
 	padding: 80px 0;
 	overflow: auto;
 }
-.parallax1 {
-    background-image: url("../img/background5.jpg");
+.parallax {
     overflow: auto;
     padding: 80px 0;
     -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
-.parallax1 p, .parallax1 h2, .parallax2 p, .parallax2 h2 { color: #ffffff; }
-.parallax2 {
+.parallax p, .parallax h2 { color: #ffffff; }
+#skills-container {
+    background-image: url("../img/background5.jpg");
+}
+#testimonials-container {
     background-image: url("../img/background6.jpg");
-    overflow: auto;
-    padding: 80px 0;
-    -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 .wrapper {
     background: none repeat scroll 0 0 transparent;
@@ -955,7 +950,7 @@ Responsive Syling
         position: relative;
         z-index: 80;
     }
-    .parallax1, .parallax2 {
+    .parallax {
         overflow: auto;
         padding: 80px 0;
         -webkit-background-size: cover;
