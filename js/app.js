@@ -148,7 +148,7 @@
 
         //Video Wallpaper Settings - alter the URL's to your converted videos
         var loadVideoWallpaper = function() {
-            var videos = [/*'audrey', 'bokeh', */'pink'/*, 'woods'*/];
+            var videos = [/*'audrey', 'bokeh', */'bokeh'/*, 'woods'*/];
             var chosenVid = Math.floor(Math.random()*videos.length);
             var video = videos[chosenVid];
             $("#video_element").wallpaper({
